@@ -21,3 +21,230 @@ body {
 img {
     display: block;
 }
+
+/* Reset styles for buttons */
+.btn {
+    all: unset;
+    background: none;
+    color: inherit;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+/* Button focus styles */
+.btn:focus {
+    outline: 0.5rem auto #4d90fe;
+}
+
+/* Hide elements visually but keep them accessible */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Container styles */
+.container {
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Profile section styles */
+.profile {
+    padding: 5rem 0;
+}
+
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Profile image styles */
+.profile-image {
+    float: left;
+    width: calc(33.33% - 1rem);
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+/* Profile user settings, bio, and stats styles */
+.profile-user-settings,
+.profile-bio,
+.profile-stats {
+    width: calc(66.666% - 2rem);
+    float: left;
+}
+
+.profile-user-settings {
+    margin-top: 1.1rem;
+}
+
+.profile-user-name {
+    font-weight: 300;
+    font-size: 3.2rem;
+    display: inline-block;
+}
+
+.profile-settings-btn {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+/* Profile edit button styles */
+.profile-edit-btn {
+    margin-left: 2rem;
+    padding: 0 2.4rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    font-size: 1.4rem;
+    border-radius: 0.3rem;
+}
+
+.profile-stats {
+    margin-top: 2.3rem;
+}
+
+.profile-stats li {
+    cursor: pointer;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-right: 4rem;
+    display: inline-block;
+}
+
+.profile-stats li:last-of-type {
+    margin-right: 0;
+}
+
+/* More profile styles */
+.profile.bio {
+    font-size: 1.6rem;
+    margin-top: 2.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Gallery styles */
+.gallery {
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1 0 22rem;
+    margin: 1rem;
+    position: relative;
+    cursor: pointer;
+    color: #fff;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-likes {
+    margin-right: 2.2rem;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.gallery-item-type {
+    position: absolute;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, .1);
+}
+
+.fa-comment,
+.fa-clone {
+    transform: rotate(180deg);
+}
+
+.gallery-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Loader styles */
+.loader {
+    width: 5rem;
+    margin: 0 auto;
+    height: 5rem;
+    border: 0.6rem solid #999;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 40rem) {
+    .profile {
+        display: flex;
+        padding: 4rem 0;
+        flex-wrap: flex;
+    }
+
+    .profile::after {
+        display: none;
+    }
+
+    .profile-image,
+    .profile-stats,
+    .profile-bio,
+    .profile-user-settings {
+        width: auto;
+        float: none;
+    }
+
+    .profile-edit-btn {
+        padding: 0;
+        text-align: center;
+        order: 1;
+        margin-top: 1rem;
+    }
+
+    .profile-user-settings {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% - 10.7rem);
+    }
+
+    .profile-user-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-image img {
+        width: 7.7rem;
+    }
+}

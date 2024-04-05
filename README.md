@@ -49,3 +49,5 @@ You will submit the GitHub project link with your final project files to the LMS
 1. Submit the GitHub project link with your final project files to the LMS. You will find this in the LMS [**[Projects](https://learn.codespace.co.za/projects)**] tab.
 
 Enjoy the project, and have fun turning HTML into a stylish Instagram profile!
+
+SDF07 LOOM VIDEO LINK.
