@@ -1,3 +1,5 @@
+[SDF07 LOOM VIDEO LINK](https://www.loom.com/share/6302645865094ce4975498c44f244d4e?sid=589851f9-ee4a-4316-a27c-0ed09a0245e3)
+
 # [SDF07] Project: CodeSpace Pets Instagram Profile
 
 Welcome to the CodeSpace Pets Instagram Profile project, where you'll get hands-on experience applying CSS layout concepts. In this project, we will have fun recreating a simplified version of an Instagram user profile page. You aim to practice using CSS for styling and layout to create a visually appealing and responsive web page.
@@ -49,5 +51,3 @@ You will submit the GitHub project link with your final project files to the LMS
 1. Submit the GitHub project link with your final project files to the LMS. You will find this in the LMS [**[Projects](https://learn.codespace.co.za/projects)**] tab.
 
 Enjoy the project, and have fun turning HTML into a stylish Instagram profile!
-
-SDF07 LOOM VIDEO LINK.
